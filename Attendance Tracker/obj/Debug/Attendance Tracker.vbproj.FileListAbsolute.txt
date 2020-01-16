@@ -12,3 +12,18 @@ C:\Users\lizap\source\repos\Attendance Tracker\Attendance Tracker\obj\Debug\Atte
 C:\Users\lizap\source\repos\Attendance Tracker\Attendance Tracker\obj\Debug\Attendance_Tracker.Add_Visitors.resources
 C:\Users\lizap\source\repos\Attendance Tracker\Attendance Tracker\obj\Debug\Attendance_Tracker.View_Visitors.resources
 C:\Users\lizap\source\repos\Attendance Tracker\Attendance Tracker\obj\Debug\Attendance_Tracker.View_Students.resources
+C:\Users\axis\Source\Repos\Logbook\Attendance Tracker\bin\Debug\Attendance Tracker.exe.config
+C:\Users\axis\Source\Repos\Logbook\Attendance Tracker\bin\Debug\Attendance Tracker.exe
+C:\Users\axis\Source\Repos\Logbook\Attendance Tracker\bin\Debug\Attendance Tracker.pdb
+C:\Users\axis\Source\Repos\Logbook\Attendance Tracker\bin\Debug\Attendance Tracker.xml
+C:\Users\axis\Source\Repos\Logbook\Attendance Tracker\obj\Debug\Attendance Tracker.vbprojAssemblyReference.cache
+C:\Users\axis\Source\Repos\Logbook\Attendance Tracker\obj\Debug\Attendance_Tracker.Add_Visitors.resources
+C:\Users\axis\Source\Repos\Logbook\Attendance Tracker\obj\Debug\Attendance_Tracker.Form1.resources
+C:\Users\axis\Source\Repos\Logbook\Attendance Tracker\obj\Debug\Attendance_Tracker.Form2.resources
+C:\Users\axis\Source\Repos\Logbook\Attendance Tracker\obj\Debug\Attendance_Tracker.Resources.resources
+C:\Users\axis\Source\Repos\Logbook\Attendance Tracker\obj\Debug\Attendance_Tracker.View_Students.resources
+C:\Users\axis\Source\Repos\Logbook\Attendance Tracker\obj\Debug\Attendance_Tracker.View_Visitors.resources
+C:\Users\axis\Source\Repos\Logbook\Attendance Tracker\obj\Debug\Attendance Tracker.vbproj.GenerateResource.cache
+C:\Users\axis\Source\Repos\Logbook\Attendance Tracker\obj\Debug\Attendance Tracker.exe
+C:\Users\axis\Source\Repos\Logbook\Attendance Tracker\obj\Debug\Attendance Tracker.xml
+C:\Users\axis\Source\Repos\Logbook\Attendance Tracker\obj\Debug\Attendance Tracker.pdb

@@ -45,9 +45,9 @@ Partial Class View_Visitors
         Me.Label6.ForeColor = System.Drawing.Color.White
         Me.Label6.Location = New System.Drawing.Point(105, 62)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(173, 37)
+        Me.Label6.Size = New System.Drawing.Size(190, 37)
         Me.Label6.TabIndex = 0
-        Me.Label6.Text = "View Visitors"
+        Me.Label6.Text = "View Students"
         '
         'TextBox1
         '

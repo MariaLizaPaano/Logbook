@@ -30,8 +30,8 @@ Partial Class Form2
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Panel3 = New System.Windows.Forms.Panel()
         Me.BackgroundWorker1 = New System.ComponentModel.BackgroundWorker()
-        Me.View_Visitors1 = New Attendance_Tracker.View_Visitors()
         Me.Add_Visitors1 = New Attendance_Tracker.Add_Visitors()
+        Me.View_Visitors1 = New Attendance_Tracker.View_Visitors()
         Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -116,6 +116,13 @@ Partial Class Form2
         Me.Panel3.Size = New System.Drawing.Size(688, 585)
         Me.Panel3.TabIndex = 5
         '
+        'Add_Visitors1
+        '
+        Me.Add_Visitors1.Location = New System.Drawing.Point(215, 0)
+        Me.Add_Visitors1.Name = "Add_Visitors1"
+        Me.Add_Visitors1.Size = New System.Drawing.Size(691, 582)
+        Me.Add_Visitors1.TabIndex = 6
+        '
         'View_Visitors1
         '
         Me.View_Visitors1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -124,13 +131,6 @@ Partial Class Form2
         Me.View_Visitors1.Name = "View_Visitors1"
         Me.View_Visitors1.Size = New System.Drawing.Size(685, 672)
         Me.View_Visitors1.TabIndex = 7
-        '
-        'Add_Visitors1
-        '
-        Me.Add_Visitors1.Location = New System.Drawing.Point(215, 0)
-        Me.Add_Visitors1.Name = "Add_Visitors1"
-        Me.Add_Visitors1.Size = New System.Drawing.Size(691, 582)
-        Me.Add_Visitors1.TabIndex = 6
         '
         'Form2
         '
