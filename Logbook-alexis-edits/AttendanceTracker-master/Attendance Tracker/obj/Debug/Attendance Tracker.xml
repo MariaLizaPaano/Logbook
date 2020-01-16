@@ -1,0 +1,236 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Attendance Tracker
+</name>
+</assembly>
+<members>
+<member name="T:Attendance_Tracker.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:Attendance_Tracker.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:Attendance_Tracker.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="P:Attendance_Tracker.My.Resources.Resources.icons8_person_80">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Attendance_Tracker.My.Resources.Resources.user">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Attendance_Tracker.My.Resources.Resources.user1">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="T:Attendance_Tracker.Database1DataSet">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:Attendance_Tracker.Database1DataSet.MARIAABADDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Attendance_Tracker.Database1DataSet.MARIAABADRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Attendance_Tracker.Database1DataSet.MARIAABADRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Attendance_Tracker.Database1DataSetTableAdapters.MARIAABADTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Attendance_Tracker.Database1DataSetTableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:Attendance_Tracker.Database1DataSetTableAdapters.TableAdapterManager.UpdateUpdatedRows(Attendance_Tracker.Database1DataSet,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:Attendance_Tracker.Database1DataSetTableAdapters.TableAdapterManager.UpdateInsertedRows(Attendance_Tracker.Database1DataSet,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:Attendance_Tracker.Database1DataSetTableAdapters.TableAdapterManager.UpdateDeletedRows(Attendance_Tracker.Database1DataSet,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:Attendance_Tracker.Database1DataSetTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:Attendance_Tracker.Database1DataSetTableAdapters.TableAdapterManager.UpdateAll(Attendance_Tracker.Database1DataSet)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:Attendance_Tracker.Database1DataSetTableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:Attendance_Tracker.Database1DataSetTableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+<member name="T:Attendance_Tracker.Database1DataSet1">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:Attendance_Tracker.Database1DataSet1.MARIAABADDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Attendance_Tracker.Database1DataSet1.MARIAABADRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Attendance_Tracker.Database1DataSet1.MARIAABADRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Attendance_Tracker.Database1DataSet1TableAdapters.MARIAABADTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Attendance_Tracker.Database1DataSet1TableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:Attendance_Tracker.Database1DataSet1TableAdapters.TableAdapterManager.UpdateUpdatedRows(Attendance_Tracker.Database1DataSet1,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:Attendance_Tracker.Database1DataSet1TableAdapters.TableAdapterManager.UpdateInsertedRows(Attendance_Tracker.Database1DataSet1,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:Attendance_Tracker.Database1DataSet1TableAdapters.TableAdapterManager.UpdateDeletedRows(Attendance_Tracker.Database1DataSet1,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:Attendance_Tracker.Database1DataSet1TableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:Attendance_Tracker.Database1DataSet1TableAdapters.TableAdapterManager.UpdateAll(Attendance_Tracker.Database1DataSet1)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:Attendance_Tracker.Database1DataSet1TableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:Attendance_Tracker.Database1DataSet1TableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+<member name="T:Attendance_Tracker.wewDataSet">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:Attendance_Tracker.wewDataSet.MARIAABADDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Attendance_Tracker.wewDataSet.MARIAABADRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Attendance_Tracker.wewDataSet.MARIAABADRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Attendance_Tracker.wewDataSetTableAdapters.MARIAABADTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Attendance_Tracker.wewDataSetTableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:Attendance_Tracker.wewDataSetTableAdapters.TableAdapterManager.UpdateUpdatedRows(Attendance_Tracker.wewDataSet,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:Attendance_Tracker.wewDataSetTableAdapters.TableAdapterManager.UpdateInsertedRows(Attendance_Tracker.wewDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:Attendance_Tracker.wewDataSetTableAdapters.TableAdapterManager.UpdateDeletedRows(Attendance_Tracker.wewDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:Attendance_Tracker.wewDataSetTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:Attendance_Tracker.wewDataSetTableAdapters.TableAdapterManager.UpdateAll(Attendance_Tracker.wewDataSet)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:Attendance_Tracker.wewDataSetTableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:Attendance_Tracker.wewDataSetTableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+</members>
+</doc>
