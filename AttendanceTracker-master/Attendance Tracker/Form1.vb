@@ -1,34 +1,49 @@
 ﻿Public Class Form1
     Private Sub Label2_Click(sender As Object, e As EventArgs) Handles Label2.Click
         Me.Close()
-
     End Sub
 
-
-
-    Private Sub TextBox3_Click(sender As Object, e As EventArgs) Handles TextBox3.Click
-        TextBox3.Clear()
-        TextBox3.ForeColor = Color.FromArgb(78, 184, 206)
-        Panel3.BackColor = Color.FromArgb(78, 184, 206)
-    End Sub
-
-    Private Sub TextBox2_Click(sender As Object, e As EventArgs) Handles TextBox2.Click
+    Private Sub TextBox2_Click(sender As Object, e As EventArgs) Handles TextBox2.GotFocus
+        'passwordbox
         TextBox2.Clear()
         TextBox2.PasswordChar = "*"
         TextBox2.ForeColor = Color.FromArgb(78, 184, 206)
         Panel2.BackColor = Color.FromArgb(78, 184, 206)
     End Sub
 
-    Private Sub TextBox1_Click(sender As Object, e As EventArgs) Handles TextBox1.Click
+    Private Sub TextBox1_Click(sender As Object, e As EventArgs) Handles TextBox1.GotFocus
+        'username box
         TextBox1.Clear()
         TextBox1.ForeColor = Color.FromArgb(78, 184, 206)
         Panel1.BackColor = Color.FromArgb(78, 184, 206)
     End Sub
 
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        Me.Hide()
-        Form2.Show()
+    Private Sub TextBox1_LostFocus(sender As Object, e As EventArgs) Handles TextBox1.LostFocus
+        'username box
+        If TextBox1.Text = "" Then
+            TextBox1.Text = "Username"
+        End If
+        TextBox1.ForeColor = Color.Gray
+        Panel1.BackColor = Color.Gray
+    End Sub
+
+    Private Sub TextBox2_LostFocus(sender As Object, e As EventArgs) Handles TextBox2.LostFocus
+        'username box
+        TextBox1.ForeColor = Color.Gray
+        Panel1.BackColor = Color.Gray
+        If TextBox2.Text = "" Then
+            TextBox2.PasswordChar = ""
+            TextBox2.Text = "Password"
+        End If
 
     End Sub
 
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        Form2.Show()
+        Me.Hide()
+    End Sub
+
+    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    End Sub
 End Class

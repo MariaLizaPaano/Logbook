@@ -11,31 +11,30 @@
     End Sub
 
     Private Sub CheckIn_Click(sender As Object, e As EventArgs) Handles CheckIn.Click
+        Timer1.Start()
+        Visitor_IDTextBox.Clear()
+        Last_NameTextBox.Clear()
+        First_NameTextBox.Clear()
+        Middle_NameTextBox.Clear()
+        Phone_NumberTextBox.Clear()
+        ComboBox1.Text = ""
+        'Label
+        Timer1.ToString()
+
+        Label1.Text = "Checked In Sucessfully"
 
     End Sub
 
     Private Sub AddNew_Click(sender As Object, e As EventArgs) Handles AddNew.Click
-        Try
-            With AddNew
-                If .Text = "Add New" Then
-                    MARIAABADBindingSource.AddNew()
-                    .Text = "CANCEL"
-
-
-                End If
-            End With
-
-            With Last_NameTextBox
-                If (.CanSelect) Then
-                    .Text = String.Empty
-                    .Select()
-
-                End If
-            End With
-        Catch ex As Exception
-            MsgBox("ERROR!: " & ex.Message.ToString(), MsgBoxStyle.OkOnly Or MsgBoxStyle.Information, "adding failed")
-
-        End Try
+        'clear
+        Visitor_IDTextBox.Clear()
+        Last_NameTextBox.Clear()
+        First_NameTextBox.Clear()
+        Middle_NameTextBox.Clear()
+        Phone_NumberTextBox.Clear()
+        ComboBox1.Text = ""
+        'Label
+        Label1.Text = ""
     End Sub
 
     Private Sub RefreshData()
@@ -45,5 +44,9 @@
         Catch ex As Exception
             MsgBox("Refresh Failed")
         End Try
+    End Sub
+
+    Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
+
     End Sub
 End Class

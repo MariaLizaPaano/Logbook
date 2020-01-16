@@ -117,16 +117,16 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="View Checkout.Designer.vb">
-      <DependentUpon>View Checkout.vb</DependentUpon>
+    <Compile Include="Visitor History.Designer.vb">
+      <DependentUpon>Visitor History.vb</DependentUpon>
     </Compile>
-    <Compile Include="View Checkout.vb">
+    <Compile Include="Visitor History.vb">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="View checkin.Designer.vb">
-      <DependentUpon>View checkin.vb</DependentUpon>
+    <Compile Include="View Checked In.Designer.vb">
+      <DependentUpon>View Checked In.vb</DependentUpon>
     </Compile>
-    <Compile Include="View checkin.vb">
+    <Compile Include="View Checked In.vb">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="wewDataSet1.Designer.vb">
@@ -151,11 +151,11 @@
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="View Checkout.resx">
-      <DependentUpon>View Checkout.vb</DependentUpon>
+    <EmbeddedResource Include="Visitor History.resx">
+      <DependentUpon>Visitor History.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="View checkin.resx">
-      <DependentUpon>View checkin.vb</DependentUpon>
+    <EmbeddedResource Include="View Checked In.resx">
+      <DependentUpon>View Checked In.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
