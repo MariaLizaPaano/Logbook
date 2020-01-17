@@ -22,12 +22,26 @@ Partial Class View_History_Vehicles
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.VehiclesDataSet = New Attendance_Tracker.vehiclesDataSet()
+        Me.MaaweBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.MaaweTableAdapter = New Attendance_Tracker.vehiclesDataSetTableAdapters.MaaweTableAdapter()
+        Me.TableAdapterManager = New Attendance_Tracker.vehiclesDataSetTableAdapters.TableAdapterManager()
+        Me.MaaweDataGridView = New System.Windows.Forms.DataGridView()
+        Me.DataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Panel2.SuspendLayout()
+        CType(Me.VehiclesDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.MaaweBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.MaaweDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Panel2
@@ -82,19 +96,84 @@ Partial Class View_History_Vehicles
         Me.TextBox1.TabIndex = 19
         Me.TextBox1.Text = "Search here"
         '
+        'VehiclesDataSet
+        '
+        Me.VehiclesDataSet.DataSetName = "vehiclesDataSet"
+        Me.VehiclesDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        '
+        'MaaweBindingSource
+        '
+        Me.MaaweBindingSource.DataMember = "Maawe"
+        Me.MaaweBindingSource.DataSource = Me.VehiclesDataSet
+        '
+        'MaaweTableAdapter
+        '
+        Me.MaaweTableAdapter.ClearBeforeFill = True
+        '
+        'TableAdapterManager
+        '
+        Me.TableAdapterManager.BackupDataSetBeforeUpdate = False
+        Me.TableAdapterManager.MaaweTableAdapter = Me.MaaweTableAdapter
+        Me.TableAdapterManager.UpdateOrder = Attendance_Tracker.vehiclesDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
+        '
+        'MaaweDataGridView
+        '
+        Me.MaaweDataGridView.AutoGenerateColumns = False
+        Me.MaaweDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.MaaweDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn1, Me.DataGridViewTextBoxColumn2, Me.DataGridViewTextBoxColumn3, Me.DataGridViewTextBoxColumn4, Me.DataGridViewTextBoxColumn5})
+        Me.MaaweDataGridView.DataSource = Me.MaaweBindingSource
+        Me.MaaweDataGridView.Location = New System.Drawing.Point(27, 216)
+        Me.MaaweDataGridView.Name = "MaaweDataGridView"
+        Me.MaaweDataGridView.Size = New System.Drawing.Size(541, 220)
+        Me.MaaweDataGridView.TabIndex = 21
+        '
+        'DataGridViewTextBoxColumn1
+        '
+        Me.DataGridViewTextBoxColumn1.DataPropertyName = "Plate Number"
+        Me.DataGridViewTextBoxColumn1.HeaderText = "Plate Number"
+        Me.DataGridViewTextBoxColumn1.Name = "DataGridViewTextBoxColumn1"
+        '
+        'DataGridViewTextBoxColumn2
+        '
+        Me.DataGridViewTextBoxColumn2.DataPropertyName = "Make"
+        Me.DataGridViewTextBoxColumn2.HeaderText = "Make"
+        Me.DataGridViewTextBoxColumn2.Name = "DataGridViewTextBoxColumn2"
+        '
+        'DataGridViewTextBoxColumn3
+        '
+        Me.DataGridViewTextBoxColumn3.DataPropertyName = "Model"
+        Me.DataGridViewTextBoxColumn3.HeaderText = "Model"
+        Me.DataGridViewTextBoxColumn3.Name = "DataGridViewTextBoxColumn3"
+        '
+        'DataGridViewTextBoxColumn4
+        '
+        Me.DataGridViewTextBoxColumn4.DataPropertyName = "Color"
+        Me.DataGridViewTextBoxColumn4.HeaderText = "Color"
+        Me.DataGridViewTextBoxColumn4.Name = "DataGridViewTextBoxColumn4"
+        '
+        'DataGridViewTextBoxColumn5
+        '
+        Me.DataGridViewTextBoxColumn5.DataPropertyName = "Remarks"
+        Me.DataGridViewTextBoxColumn5.HeaderText = "Remarks"
+        Me.DataGridViewTextBoxColumn5.Name = "DataGridViewTextBoxColumn5"
+        '
         'View_History_Vehicles
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.Controls.Add(Me.MaaweDataGridView)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.Panel2)
         Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "View_History_Vehicles"
-        Me.Size = New System.Drawing.Size(767, 585)
+        Me.Size = New System.Drawing.Size(828, 585)
         Me.Panel2.ResumeLayout(False)
         Me.Panel2.PerformLayout()
+        CType(Me.VehiclesDataSet, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.MaaweBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.MaaweDataGridView, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -105,4 +184,14 @@ Partial Class View_History_Vehicles
     Friend WithEvents Button1 As Button
     Friend WithEvents Panel1 As Panel
     Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents VehiclesDataSet As vehiclesDataSet
+    Friend WithEvents MaaweBindingSource As BindingSource
+    Friend WithEvents MaaweTableAdapter As vehiclesDataSetTableAdapters.MaaweTableAdapter
+    Friend WithEvents TableAdapterManager As vehiclesDataSetTableAdapters.TableAdapterManager
+    Friend WithEvents MaaweDataGridView As DataGridView
+    Friend WithEvents DataGridViewTextBoxColumn1 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn2 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn3 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn4 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn5 As DataGridViewTextBoxColumn
 End Class

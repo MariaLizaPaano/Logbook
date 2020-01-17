@@ -30,7 +30,7 @@
     End Sub
 
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
-        Label1.Text = Date.Now.ToString("dddd") & vbCrLf & vbCrLf & Date.Now.ToString("MMM - dd - yyyy")
+        Label1.Text = Date.Now.ToString("dddd") & vbCrLf & vbCrLf & Date.Now.ToString("dd - MMM - yyyy")
         'Label1.Text = Format(Now, "Long Date")
         Label3.Text = Date.Now.ToString(" hh:mm:ss")
     End Sub

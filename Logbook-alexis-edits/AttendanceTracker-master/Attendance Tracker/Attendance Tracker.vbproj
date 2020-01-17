@@ -123,6 +123,11 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="vehiclesDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>vehiclesDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="View Checked in vehicles.Designer.vb">
       <DependentUpon>View Checked in vehicles.vb</DependentUpon>
     </Compile>
@@ -218,6 +223,17 @@
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
     <None Include="App.config" />
+    <None Include="vehiclesDataSet.xsc">
+      <DependentUpon>vehiclesDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="vehiclesDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>vehiclesDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="vehiclesDataSet.xss">
+      <DependentUpon>vehiclesDataSet.xsd</DependentUpon>
+    </None>
     <None Include="wewDataSet1.xsc">
       <DependentUpon>wewDataSet1.xsd</DependentUpon>
     </None>
@@ -240,6 +256,9 @@
     <None Include="Resources\icons8-person-80.png" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="vehicles.accdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="wew.accdb">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

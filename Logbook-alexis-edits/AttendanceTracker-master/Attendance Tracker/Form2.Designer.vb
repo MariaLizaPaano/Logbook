@@ -25,6 +25,7 @@ Partial Class Form2
         Me.components = New System.ComponentModel.Container()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.View_History_Vehicles1 = New Attendance_Tracker.View_History_Vehicles()
         Me.Button6 = New System.Windows.Forms.Button()
         Me.Button5 = New System.Windows.Forms.Button()
         Me.Button4 = New System.Windows.Forms.Button()
@@ -36,7 +37,6 @@ Partial Class Form2
         Me.Panel3 = New System.Windows.Forms.Panel()
         Me.BackgroundWorker1 = New System.ComponentModel.BackgroundWorker()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
-        Me.View_History_Vehicles1 = New Attendance_Tracker.View_History_Vehicles()
         Me.Add_Visitors3 = New Attendance_Tracker.Add_Visitors()
         Me.View_Visitors1 = New Attendance_Tracker.View_Visitors()
         Me.View_Students1 = New Attendance_Tracker.View_Students()
@@ -76,6 +76,15 @@ Partial Class Form2
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(215, 585)
         Me.Panel1.TabIndex = 3
+        '
+        'View_History_Vehicles1
+        '
+        Me.View_History_Vehicles1.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.View_History_Vehicles1.Location = New System.Drawing.Point(212, 0)
+        Me.View_History_Vehicles1.Margin = New System.Windows.Forms.Padding(2)
+        Me.View_History_Vehicles1.Name = "View_History_Vehicles1"
+        Me.View_History_Vehicles1.Size = New System.Drawing.Size(808, 609)
+        Me.View_History_Vehicles1.TabIndex = 19
         '
         'Button6
         '
@@ -121,9 +130,9 @@ Partial Class Form2
         Me.Label3.Location = New System.Drawing.Point(6, 102)
         Me.Label3.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(190, 49)
+        Me.Label3.Size = New System.Drawing.Size(192, 49)
         Me.Label3.TabIndex = 13
-        Me.Label3.Text = "06:30:00"
+        Me.Label3.Text = "00:00:00"
         '
         'Label1
         '
@@ -184,14 +193,6 @@ Partial Class Form2
         '
         Me.Timer1.Interval = 1000
         '
-        'View_History_Vehicles1
-        '
-        Me.View_History_Vehicles1.Location = New System.Drawing.Point(212, 0)
-        Me.View_History_Vehicles1.Margin = New System.Windows.Forms.Padding(2)
-        Me.View_History_Vehicles1.Name = "View_History_Vehicles1"
-        Me.View_History_Vehicles1.Size = New System.Drawing.Size(808, 609)
-        Me.View_History_Vehicles1.TabIndex = 19
-        '
         'Add_Visitors3
         '
         Me.Add_Visitors3.Location = New System.Drawing.Point(212, 0)
@@ -236,6 +237,7 @@ Partial Class Form2
         '
         'View_History_Vehicles2
         '
+        Me.View_History_Vehicles2.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.View_History_Vehicles2.Location = New System.Drawing.Point(212, 0)
         Me.View_History_Vehicles2.Margin = New System.Windows.Forms.Padding(2)
         Me.View_History_Vehicles2.Name = "View_History_Vehicles2"
