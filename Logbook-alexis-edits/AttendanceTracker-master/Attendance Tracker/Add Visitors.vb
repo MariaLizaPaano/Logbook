@@ -1,4 +1,5 @@
 ﻿Public Class Add_Visitors
+    Dim ctr As Integer
     Private Sub Add_Visitors_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         clearer()
     End Sub
@@ -15,8 +16,6 @@
         'Dim alpha As String = "ABCDEFGHIJKLMNOPQRSTUVabcdefghijklmnopqrstuvwxyz"
         Dim errored As Boolean = False
         Dim err As String
-
-        Timer1.Start()
 
         If Visitor_IDTextBox.Text = "" Then
             errored = True
@@ -54,10 +53,21 @@
         End If
 
         If Not errored Then
+            ctr = 0
+            Timer1.Start()
+            'database insert here
             clearer()
-            MessageBox.Show("Successfully checked in visitor")
+            Label1.ForeColor = Color.Green
+            Label1.Visible = True
+            Label1.Text = "Successfully checked in visitor"
+            'MessageBox.Show("Successfully checked in visitor")
         Else
-            MessageBox.Show("Please fill out all fields.")
+            ctr = 0
+            Timer1.Start()
+            Label1.ForeColor = Color.Red
+            Label1.Visible = True
+            Label1.Text = "There was an error"
+            'MessageBox.Show("Please fill out all fields.")
         End If
     End Sub
 
@@ -155,5 +165,13 @@
 
     Private Sub Purposetxbx_TextChanged(sender As Object, e As EventArgs) Handles Purposetxbx.GotFocus
         purposestar.Text = ""
+    End Sub
+
+    Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
+        ctr += 1
+        If ctr = 3 Then
+            Label1.Visible = False
+            Timer1.Stop()
+        End If
     End Sub
 End Class

@@ -278,10 +278,17 @@ Partial Class Add_Visitors
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.ForeColor = System.Drawing.Color.Green
         Me.Label1.Location = New System.Drawing.Point(294, 508)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(0, 24)
+        Me.Label1.Size = New System.Drawing.Size(271, 24)
         Me.Label1.TabIndex = 25
+        Me.Label1.Text = "Successfully Checked In Visitor"
+        Me.Label1.Visible = False
+        '
+        'Timer1
+        '
+        Me.Timer1.Interval = 500
         '
         'badgestar
         '
@@ -289,7 +296,7 @@ Partial Class Add_Visitors
         Me.badgestar.BackColor = System.Drawing.Color.Transparent
         Me.badgestar.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.badgestar.ForeColor = System.Drawing.Color.Red
-        Me.badgestar.Location = New System.Drawing.Point(532, 188)
+        Me.badgestar.Location = New System.Drawing.Point(561, 188)
         Me.badgestar.Name = "badgestar"
         Me.badgestar.Size = New System.Drawing.Size(23, 31)
         Me.badgestar.TabIndex = 26
@@ -301,7 +308,7 @@ Partial Class Add_Visitors
         Me.lnamestar.BackColor = System.Drawing.Color.Transparent
         Me.lnamestar.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lnamestar.ForeColor = System.Drawing.Color.Red
-        Me.lnamestar.Location = New System.Drawing.Point(532, 229)
+        Me.lnamestar.Location = New System.Drawing.Point(561, 229)
         Me.lnamestar.Name = "lnamestar"
         Me.lnamestar.Size = New System.Drawing.Size(23, 31)
         Me.lnamestar.TabIndex = 26
@@ -313,7 +320,7 @@ Partial Class Add_Visitors
         Me.fnamestar.BackColor = System.Drawing.Color.Transparent
         Me.fnamestar.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.fnamestar.ForeColor = System.Drawing.Color.Red
-        Me.fnamestar.Location = New System.Drawing.Point(532, 265)
+        Me.fnamestar.Location = New System.Drawing.Point(561, 265)
         Me.fnamestar.Name = "fnamestar"
         Me.fnamestar.Size = New System.Drawing.Size(23, 31)
         Me.fnamestar.TabIndex = 26
@@ -325,7 +332,7 @@ Partial Class Add_Visitors
         Me.mnamestar.BackColor = System.Drawing.Color.Transparent
         Me.mnamestar.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.mnamestar.ForeColor = System.Drawing.Color.Red
-        Me.mnamestar.Location = New System.Drawing.Point(532, 301)
+        Me.mnamestar.Location = New System.Drawing.Point(561, 301)
         Me.mnamestar.Name = "mnamestar"
         Me.mnamestar.Size = New System.Drawing.Size(23, 31)
         Me.mnamestar.TabIndex = 26
@@ -337,7 +344,7 @@ Partial Class Add_Visitors
         Me.phonestar.BackColor = System.Drawing.Color.Transparent
         Me.phonestar.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.phonestar.ForeColor = System.Drawing.Color.Red
-        Me.phonestar.Location = New System.Drawing.Point(532, 339)
+        Me.phonestar.Location = New System.Drawing.Point(561, 339)
         Me.phonestar.Name = "phonestar"
         Me.phonestar.Size = New System.Drawing.Size(23, 31)
         Me.phonestar.TabIndex = 26
@@ -349,7 +356,7 @@ Partial Class Add_Visitors
         Me.deststar.BackColor = System.Drawing.Color.Transparent
         Me.deststar.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.deststar.ForeColor = System.Drawing.Color.Red
-        Me.deststar.Location = New System.Drawing.Point(532, 374)
+        Me.deststar.Location = New System.Drawing.Point(561, 374)
         Me.deststar.Name = "deststar"
         Me.deststar.Size = New System.Drawing.Size(23, 31)
         Me.deststar.TabIndex = 26
@@ -371,7 +378,7 @@ Partial Class Add_Visitors
         Me.purposestar.BackColor = System.Drawing.Color.Transparent
         Me.purposestar.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.purposestar.ForeColor = System.Drawing.Color.Red
-        Me.purposestar.Location = New System.Drawing.Point(532, 410)
+        Me.purposestar.Location = New System.Drawing.Point(561, 410)
         Me.purposestar.Name = "purposestar"
         Me.purposestar.Size = New System.Drawing.Size(23, 31)
         Me.purposestar.TabIndex = 26
