@@ -64,7 +64,7 @@ Partial Class View_Visitors
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("Segoe UI Semibold", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label6.ForeColor = System.Drawing.Color.White
-        Me.Label6.Location = New System.Drawing.Point(37, 24)
+        Me.Label6.Location = New System.Drawing.Point(20, 100)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(186, 37)
         Me.Label6.TabIndex = 0
@@ -234,7 +234,7 @@ Partial Class View_Visitors
         Me.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ForeColor = System.Drawing.SystemColors.ControlDarkDark
         Me.Name = "View_Visitors"
-        Me.Size = New System.Drawing.Size(808, 609)
+        Me.Size = New System.Drawing.Size(767, 585)
         Me.Panel2.ResumeLayout(False)
         Me.Panel2.PerformLayout()
         CType(Me.WewDataSet, System.ComponentModel.ISupportInitialize).EndInit()

@@ -19,7 +19,7 @@
     End Sub
 
     Private Sub TextBox1_LostFocus(sender As Object, e As EventArgs) Handles TextBox1.LostFocus
-        'username box
+        'USERNAME NO FOCUS box
         If TextBox1.Text = "" Then
             TextBox1.Text = "Username"
         End If
@@ -28,9 +28,9 @@
     End Sub
 
     Private Sub TextBox2_LostFocus(sender As Object, e As EventArgs) Handles TextBox2.LostFocus
-        'username box
-        TextBox1.ForeColor = Color.Gray
-        Panel1.BackColor = Color.Gray
+        'PASSWORD NO FOCUS box
+        TextBox2.ForeColor = Color.Gray
+        Panel2.BackColor = Color.Gray
         If TextBox2.Text = "" Then
             TextBox2.PasswordChar = ""
             TextBox2.Text = "Password"

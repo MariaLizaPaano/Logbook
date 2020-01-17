@@ -30,7 +30,8 @@
     End Sub
 
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
-        Label1.Text = Date.Now.ToString("dd-MM-yyyy")
+        Label1.Text = Date.Now.ToString("dddd") & vbCrLf & vbCrLf & Date.Now.ToString("MMM - dd - yyyy")
+        'Label1.Text = Format(Now, "Long Date")
         Label3.Text = Date.Now.ToString(" hh:mm:ss")
     End Sub
 
@@ -72,4 +73,5 @@
         View_History_Vehicles2.Visible = True
 
     End Sub
+
 End Class

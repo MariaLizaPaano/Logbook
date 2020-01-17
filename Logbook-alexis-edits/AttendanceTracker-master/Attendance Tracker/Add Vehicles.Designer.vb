@@ -35,6 +35,7 @@ Partial Class Add_Vehicles
         Me.First_NameTextBox = New System.Windows.Forms.TextBox()
         Me.Visitor_IDTextBox = New System.Windows.Forms.TextBox()
         Me.CheckIn = New System.Windows.Forms.Button()
+        Me.Label2 = New System.Windows.Forms.Label()
         Middle_NameLabel = New System.Windows.Forms.Label()
         First_NameLabel = New System.Windows.Forms.Label()
         Last_NameLabel = New System.Windows.Forms.Label()
@@ -42,14 +43,57 @@ Partial Class Add_Vehicles
         Me.Panel2.SuspendLayout()
         Me.SuspendLayout()
         '
+        'Middle_NameLabel
+        '
+        Middle_NameLabel.AutoSize = True
+        Middle_NameLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Middle_NameLabel.Location = New System.Drawing.Point(104, 381)
+        Middle_NameLabel.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Middle_NameLabel.Name = "Middle_NameLabel"
+        Middle_NameLabel.Size = New System.Drawing.Size(50, 20)
+        Middle_NameLabel.TabIndex = 32
+        Middle_NameLabel.Text = "Color:"
+        '
+        'First_NameLabel
+        '
+        First_NameLabel.AutoSize = True
+        First_NameLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        First_NameLabel.Location = New System.Drawing.Point(104, 329)
+        First_NameLabel.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        First_NameLabel.Name = "First_NameLabel"
+        First_NameLabel.Size = New System.Drawing.Size(56, 20)
+        First_NameLabel.TabIndex = 30
+        First_NameLabel.Text = "Model:"
+        '
+        'Last_NameLabel
+        '
+        Last_NameLabel.AutoSize = True
+        Last_NameLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Last_NameLabel.Location = New System.Drawing.Point(104, 278)
+        Last_NameLabel.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Last_NameLabel.Name = "Last_NameLabel"
+        Last_NameLabel.Size = New System.Drawing.Size(52, 20)
+        Last_NameLabel.TabIndex = 28
+        Last_NameLabel.Text = "Make:"
+        '
+        'Visitor_IDLabel
+        '
+        Visitor_IDLabel.AutoSize = True
+        Visitor_IDLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Visitor_IDLabel.Location = New System.Drawing.Point(104, 221)
+        Visitor_IDLabel.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Visitor_IDLabel.Name = "Visitor_IDLabel"
+        Visitor_IDLabel.Size = New System.Drawing.Size(109, 20)
+        Visitor_IDLabel.TabIndex = 27
+        Visitor_IDLabel.Text = "Plate Number:"
+        '
         'Panel2
         '
         Me.Panel2.BackColor = System.Drawing.Color.FromArgb(CType(CType(47, Byte), Integer), CType(CType(47, Byte), Integer), CType(CType(79, Byte), Integer))
         Me.Panel2.Controls.Add(Me.Label6)
         Me.Panel2.Location = New System.Drawing.Point(0, 0)
-        Me.Panel2.Margin = New System.Windows.Forms.Padding(4)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(1077, 192)
+        Me.Panel2.Size = New System.Drawing.Size(808, 156)
         Me.Panel2.TabIndex = 13
         '
         'Label6
@@ -57,10 +101,9 @@ Partial Class Add_Vehicles
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("Segoe UI Semibold", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label6.ForeColor = System.Drawing.Color.White
-        Me.Label6.Location = New System.Drawing.Point(37, 24)
-        Me.Label6.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label6.Location = New System.Drawing.Point(20, 100)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(202, 46)
+        Me.Label6.Size = New System.Drawing.Size(160, 37)
         Me.Label6.TabIndex = 0
         Me.Label6.Text = "Add Vehicle"
         '
@@ -68,10 +111,9 @@ Partial Class Add_Vehicles
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(770, 539)
-        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label1.Location = New System.Drawing.Point(578, 438)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(0, 25)
+        Me.Label1.Size = New System.Drawing.Size(0, 20)
         Me.Label1.TabIndex = 40
         '
         'ComboBox1
@@ -79,10 +121,9 @@ Partial Class Add_Vehicles
         Me.ComboBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ComboBox1.FormattingEnabled = True
         Me.ComboBox1.Items.AddRange(New Object() {"Toyota", "Mitsubishi", "Honda", "Isuzu", "Hyundai", "Kia"})
-        Me.ComboBox1.Location = New System.Drawing.Point(416, 326)
-        Me.ComboBox1.Margin = New System.Windows.Forms.Padding(4)
+        Me.ComboBox1.Location = New System.Drawing.Point(264, 276)
         Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(325, 33)
+        Me.ComboBox1.Size = New System.Drawing.Size(245, 28)
         Me.ComboBox1.TabIndex = 39
         '
         'AddNew
@@ -91,82 +132,41 @@ Partial Class Add_Vehicles
         Me.AddNew.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.AddNew.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.AddNew.ForeColor = System.Drawing.Color.White
-        Me.AddNew.Location = New System.Drawing.Point(416, 532)
-        Me.AddNew.Margin = New System.Windows.Forms.Padding(4)
+        Me.AddNew.Location = New System.Drawing.Point(261, 443)
         Me.AddNew.Name = "AddNew"
-        Me.AddNew.Size = New System.Drawing.Size(145, 43)
+        Me.AddNew.Size = New System.Drawing.Size(109, 35)
         Me.AddNew.TabIndex = 38
         Me.AddNew.Text = "Clear"
         Me.AddNew.UseVisualStyleBackColor = False
         '
-        'Middle_NameLabel
-        '
-        Middle_NameLabel.AutoSize = True
-        Middle_NameLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Middle_NameLabel.Location = New System.Drawing.Point(202, 456)
-        Middle_NameLabel.Name = "Middle_NameLabel"
-        Middle_NameLabel.Size = New System.Drawing.Size(65, 25)
-        Middle_NameLabel.TabIndex = 32
-        Middle_NameLabel.Text = "Color:"
-        '
         'Middle_NameTextBox
         '
         Me.Middle_NameTextBox.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Middle_NameTextBox.Location = New System.Drawing.Point(416, 453)
-        Me.Middle_NameTextBox.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.Middle_NameTextBox.Location = New System.Drawing.Point(264, 379)
+        Me.Middle_NameTextBox.Margin = New System.Windows.Forms.Padding(2)
         Me.Middle_NameTextBox.Multiline = True
         Me.Middle_NameTextBox.Name = "Middle_NameTextBox"
-        Me.Middle_NameTextBox.Size = New System.Drawing.Size(325, 34)
+        Me.Middle_NameTextBox.Size = New System.Drawing.Size(245, 28)
         Me.Middle_NameTextBox.TabIndex = 35
-        '
-        'First_NameLabel
-        '
-        First_NameLabel.AutoSize = True
-        First_NameLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        First_NameLabel.Location = New System.Drawing.Point(202, 392)
-        First_NameLabel.Name = "First_NameLabel"
-        First_NameLabel.Size = New System.Drawing.Size(72, 25)
-        First_NameLabel.TabIndex = 30
-        First_NameLabel.Text = "Model:"
         '
         'First_NameTextBox
         '
         Me.First_NameTextBox.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.First_NameTextBox.Location = New System.Drawing.Point(416, 389)
-        Me.First_NameTextBox.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.First_NameTextBox.Location = New System.Drawing.Point(264, 327)
+        Me.First_NameTextBox.Margin = New System.Windows.Forms.Padding(2)
         Me.First_NameTextBox.Multiline = True
         Me.First_NameTextBox.Name = "First_NameTextBox"
-        Me.First_NameTextBox.Size = New System.Drawing.Size(325, 34)
+        Me.First_NameTextBox.Size = New System.Drawing.Size(245, 28)
         Me.First_NameTextBox.TabIndex = 33
-        '
-        'Last_NameLabel
-        '
-        Last_NameLabel.AutoSize = True
-        Last_NameLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Last_NameLabel.Location = New System.Drawing.Point(202, 329)
-        Last_NameLabel.Name = "Last_NameLabel"
-        Last_NameLabel.Size = New System.Drawing.Size(67, 25)
-        Last_NameLabel.TabIndex = 28
-        Last_NameLabel.Text = "Make:"
-        '
-        'Visitor_IDLabel
-        '
-        Visitor_IDLabel.AutoSize = True
-        Visitor_IDLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Visitor_IDLabel.Location = New System.Drawing.Point(202, 258)
-        Visitor_IDLabel.Name = "Visitor_IDLabel"
-        Visitor_IDLabel.Size = New System.Drawing.Size(136, 25)
-        Visitor_IDLabel.TabIndex = 27
-        Visitor_IDLabel.Text = "Plate Number:"
         '
         'Visitor_IDTextBox
         '
         Me.Visitor_IDTextBox.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Visitor_IDTextBox.Location = New System.Drawing.Point(416, 254)
-        Me.Visitor_IDTextBox.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.Visitor_IDTextBox.Location = New System.Drawing.Point(264, 217)
+        Me.Visitor_IDTextBox.Margin = New System.Windows.Forms.Padding(2)
         Me.Visitor_IDTextBox.Multiline = True
         Me.Visitor_IDTextBox.Name = "Visitor_IDTextBox"
-        Me.Visitor_IDTextBox.Size = New System.Drawing.Size(325, 34)
+        Me.Visitor_IDTextBox.Size = New System.Drawing.Size(245, 28)
         Me.Visitor_IDTextBox.TabIndex = 29
         '
         'CheckIn
@@ -175,18 +175,28 @@ Partial Class Add_Vehicles
         Me.CheckIn.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.CheckIn.Font = New System.Drawing.Font("Arial Narrow", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.CheckIn.ForeColor = System.Drawing.Color.White
-        Me.CheckIn.Location = New System.Drawing.Point(598, 532)
-        Me.CheckIn.Margin = New System.Windows.Forms.Padding(4)
+        Me.CheckIn.Location = New System.Drawing.Point(397, 443)
         Me.CheckIn.Name = "CheckIn"
-        Me.CheckIn.Size = New System.Drawing.Size(145, 43)
+        Me.CheckIn.Size = New System.Drawing.Size(109, 35)
         Me.CheckIn.TabIndex = 26
         Me.CheckIn.Text = "Check in"
         Me.CheckIn.UseVisualStyleBackColor = False
         '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.ForeColor = System.Drawing.Color.DarkSlateGray
+        Me.Label2.Location = New System.Drawing.Point(241, 501)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(0, 24)
+        Me.Label2.TabIndex = 41
+        '
         'Add_Vehicles
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.ComboBox1)
         Me.Controls.Add(Me.AddNew)
@@ -199,8 +209,9 @@ Partial Class Add_Vehicles
         Me.Controls.Add(Me.Visitor_IDTextBox)
         Me.Controls.Add(Me.CheckIn)
         Me.Controls.Add(Me.Panel2)
+        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "Add_Vehicles"
-        Me.Size = New System.Drawing.Size(1077, 750)
+        Me.Size = New System.Drawing.Size(767, 585)
         Me.Panel2.ResumeLayout(False)
         Me.Panel2.PerformLayout()
         Me.ResumeLayout(False)
@@ -217,4 +228,5 @@ Partial Class Add_Vehicles
     Friend WithEvents First_NameTextBox As TextBox
     Friend WithEvents Visitor_IDTextBox As TextBox
     Friend WithEvents CheckIn As Button
+    Friend WithEvents Label2 As Label
 End Class

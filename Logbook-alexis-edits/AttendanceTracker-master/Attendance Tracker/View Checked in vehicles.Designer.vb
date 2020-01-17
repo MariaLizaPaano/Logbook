@@ -36,9 +36,8 @@ Partial Class View_Checked_in_vehicles
         Me.Panel2.BackColor = System.Drawing.Color.FromArgb(CType(CType(47, Byte), Integer), CType(CType(47, Byte), Integer), CType(CType(79, Byte), Integer))
         Me.Panel2.Controls.Add(Me.Label6)
         Me.Panel2.Location = New System.Drawing.Point(0, 0)
-        Me.Panel2.Margin = New System.Windows.Forms.Padding(4)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(1077, 192)
+        Me.Panel2.Size = New System.Drawing.Size(808, 156)
         Me.Panel2.TabIndex = 13
         '
         'Label6
@@ -46,10 +45,9 @@ Partial Class View_Checked_in_vehicles
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("Segoe UI Semibold", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label6.ForeColor = System.Drawing.Color.White
-        Me.Label6.Location = New System.Drawing.Point(37, 24)
-        Me.Label6.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label6.Location = New System.Drawing.Point(20, 100)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(406, 46)
+        Me.Label6.Size = New System.Drawing.Size(321, 37)
         Me.Label6.TabIndex = 0
         Me.Label6.Text = "View Checked in Vehicles"
         '
@@ -59,10 +57,9 @@ Partial Class View_Checked_in_vehicles
         Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.Button1.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button1.ForeColor = System.Drawing.Color.White
-        Me.Button1.Location = New System.Drawing.Point(652, 629)
-        Me.Button1.Margin = New System.Windows.Forms.Padding(4)
+        Me.Button1.Location = New System.Drawing.Point(489, 511)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(324, 43)
+        Me.Button1.Size = New System.Drawing.Size(243, 35)
         Me.Button1.TabIndex = 13
         Me.Button1.Text = "Check out"
         Me.Button1.UseVisualStyleBackColor = False
@@ -73,9 +70,10 @@ Partial Class View_Checked_in_vehicles
         Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.Button2.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button2.ForeColor = System.Drawing.Color.White
-        Me.Button2.Location = New System.Drawing.Point(229, 199)
+        Me.Button2.Location = New System.Drawing.Point(172, 162)
+        Me.Button2.Margin = New System.Windows.Forms.Padding(2)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(103, 30)
+        Me.Button2.Size = New System.Drawing.Size(77, 24)
         Me.Button2.TabIndex = 20
         Me.Button2.Text = "Search"
         Me.Button2.UseVisualStyleBackColor = False
@@ -83,33 +81,36 @@ Partial Class View_Checked_in_vehicles
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.Panel1.Location = New System.Drawing.Point(3, 228)
+        Me.Panel1.Location = New System.Drawing.Point(2, 185)
+        Me.Panel1.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(220, 1)
+        Me.Panel1.Size = New System.Drawing.Size(165, 1)
         Me.Panel1.TabIndex = 19
         '
         'TextBox1
         '
         Me.TextBox1.BackColor = System.Drawing.SystemColors.Window
         Me.TextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.TextBox1.Location = New System.Drawing.Point(3, 199)
+        Me.TextBox1.Location = New System.Drawing.Point(2, 162)
+        Me.TextBox1.Margin = New System.Windows.Forms.Padding(2)
         Me.TextBox1.Multiline = True
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(217, 23)
+        Me.TextBox1.Size = New System.Drawing.Size(163, 19)
         Me.TextBox1.TabIndex = 18
         Me.TextBox1.Text = "Search here"
         '
         'View_Checked_in_vehicles
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Panel2)
+        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "View_Checked_in_vehicles"
-        Me.Size = New System.Drawing.Size(1077, 750)
+        Me.Size = New System.Drawing.Size(767, 585)
         Me.Panel2.ResumeLayout(False)
         Me.Panel2.PerformLayout()
         Me.ResumeLayout(False)
