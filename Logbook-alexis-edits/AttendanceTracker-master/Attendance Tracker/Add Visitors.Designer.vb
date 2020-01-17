@@ -29,7 +29,7 @@ Partial Class Add_Visitors
         Dim Middle_NameLabel As System.Windows.Forms.Label
         Dim Phone_NumberLabel As System.Windows.Forms.Label
         Dim DestinationLabel As System.Windows.Forms.Label
-        Dim Label9 As System.Windows.Forms.Label
+        Dim Purposelbl As System.Windows.Forms.Label
         Me.CheckIn = New System.Windows.Forms.Button()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.Label6 = New System.Windows.Forms.Label()
@@ -46,20 +46,21 @@ Partial Class Add_Visitors
         Me.ComboBox1 = New System.Windows.Forms.ComboBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.Label5 = New System.Windows.Forms.Label()
-        Me.Label7 = New System.Windows.Forms.Label()
-        Me.Label8 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.badgestar = New System.Windows.Forms.Label()
+        Me.lnamestar = New System.Windows.Forms.Label()
+        Me.fnamestar = New System.Windows.Forms.Label()
+        Me.mnamestar = New System.Windows.Forms.Label()
+        Me.phonestar = New System.Windows.Forms.Label()
+        Me.deststar = New System.Windows.Forms.Label()
+        Me.Purposetxbx = New System.Windows.Forms.TextBox()
+        Me.purposestar = New System.Windows.Forms.Label()
         Visitor_IDLabel = New System.Windows.Forms.Label()
         Last_NameLabel = New System.Windows.Forms.Label()
         First_NameLabel = New System.Windows.Forms.Label()
         Middle_NameLabel = New System.Windows.Forms.Label()
         Phone_NumberLabel = New System.Windows.Forms.Label()
         DestinationLabel = New System.Windows.Forms.Label()
-        Label9 = New System.Windows.Forms.Label()
+        Purposelbl = New System.Windows.Forms.Label()
         Me.Panel2.SuspendLayout()
         CType(Me.WewDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.MARIAABADBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -131,6 +132,17 @@ Partial Class Add_Visitors
         DestinationLabel.TabIndex = 21
         DestinationLabel.Text = "Destination:"
         '
+        'Purposelbl
+        '
+        Purposelbl.AutoSize = True
+        Purposelbl.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Purposelbl.Location = New System.Drawing.Point(150, 420)
+        Purposelbl.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Purposelbl.Name = "Purposelbl"
+        Purposelbl.Size = New System.Drawing.Size(68, 20)
+        Purposelbl.TabIndex = 17
+        Purposelbl.Text = "Purpose"
+        '
         'CheckIn
         '
         Me.CheckIn.BackColor = System.Drawing.Color.FromArgb(CType(CType(47, Byte), Integer), CType(CType(47, Byte), Integer), CType(CType(79, Byte), Integer))
@@ -140,7 +152,7 @@ Partial Class Add_Visitors
         Me.CheckIn.Location = New System.Drawing.Point(446, 458)
         Me.CheckIn.Name = "CheckIn"
         Me.CheckIn.Size = New System.Drawing.Size(109, 35)
-        Me.CheckIn.TabIndex = 11
+        Me.CheckIn.TabIndex = 8
         Me.CheckIn.Text = "Check in"
         Me.CheckIn.UseVisualStyleBackColor = False
         '
@@ -193,7 +205,7 @@ Partial Class Add_Visitors
         Me.Visitor_IDTextBox.Multiline = True
         Me.Visitor_IDTextBox.Name = "Visitor_IDTextBox"
         Me.Visitor_IDTextBox.Size = New System.Drawing.Size(245, 28)
-        Me.Visitor_IDTextBox.TabIndex = 14
+        Me.Visitor_IDTextBox.TabIndex = 1
         '
         'Last_NameTextBox
         '
@@ -204,7 +216,7 @@ Partial Class Add_Visitors
         Me.Last_NameTextBox.Multiline = True
         Me.Last_NameTextBox.Name = "Last_NameTextBox"
         Me.Last_NameTextBox.Size = New System.Drawing.Size(245, 28)
-        Me.Last_NameTextBox.TabIndex = 15
+        Me.Last_NameTextBox.TabIndex = 2
         '
         'First_NameTextBox
         '
@@ -215,7 +227,7 @@ Partial Class Add_Visitors
         Me.First_NameTextBox.Multiline = True
         Me.First_NameTextBox.Name = "First_NameTextBox"
         Me.First_NameTextBox.Size = New System.Drawing.Size(245, 28)
-        Me.First_NameTextBox.TabIndex = 16
+        Me.First_NameTextBox.TabIndex = 3
         '
         'Middle_NameTextBox
         '
@@ -226,7 +238,7 @@ Partial Class Add_Visitors
         Me.Middle_NameTextBox.Multiline = True
         Me.Middle_NameTextBox.Name = "Middle_NameTextBox"
         Me.Middle_NameTextBox.Size = New System.Drawing.Size(245, 28)
-        Me.Middle_NameTextBox.TabIndex = 17
+        Me.Middle_NameTextBox.TabIndex = 4
         '
         'Phone_NumberTextBox
         '
@@ -237,7 +249,7 @@ Partial Class Add_Visitors
         Me.Phone_NumberTextBox.Multiline = True
         Me.Phone_NumberTextBox.Name = "Phone_NumberTextBox"
         Me.Phone_NumberTextBox.Size = New System.Drawing.Size(245, 28)
-        Me.Phone_NumberTextBox.TabIndex = 18
+        Me.Phone_NumberTextBox.TabIndex = 5
         '
         'AddNew
         '
@@ -248,7 +260,7 @@ Partial Class Add_Visitors
         Me.AddNew.Location = New System.Drawing.Point(310, 458)
         Me.AddNew.Name = "AddNew"
         Me.AddNew.Size = New System.Drawing.Size(109, 35)
-        Me.AddNew.TabIndex = 23
+        Me.AddNew.TabIndex = 9
         Me.AddNew.Text = "Clear"
         Me.AddNew.UseVisualStyleBackColor = False
         '
@@ -271,110 +283,118 @@ Partial Class Add_Visitors
         Me.Label1.Size = New System.Drawing.Size(0, 24)
         Me.Label1.TabIndex = 25
         '
-        'Label2
+        'badgestar
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.BackColor = System.Drawing.Color.Transparent
-        Me.Label2.ForeColor = System.Drawing.Color.Red
-        Me.Label2.Location = New System.Drawing.Point(560, 195)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(10, 13)
-        Me.Label2.TabIndex = 26
-        Me.Label2.Text = "-"
+        Me.badgestar.AutoSize = True
+        Me.badgestar.BackColor = System.Drawing.Color.Transparent
+        Me.badgestar.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.badgestar.ForeColor = System.Drawing.Color.Red
+        Me.badgestar.Location = New System.Drawing.Point(532, 188)
+        Me.badgestar.Name = "badgestar"
+        Me.badgestar.Size = New System.Drawing.Size(23, 31)
+        Me.badgestar.TabIndex = 26
+        Me.badgestar.Text = "-"
         '
-        'Label3
+        'lnamestar
         '
-        Me.Label3.AutoSize = True
-        Me.Label3.BackColor = System.Drawing.Color.Transparent
-        Me.Label3.ForeColor = System.Drawing.Color.Red
-        Me.Label3.Location = New System.Drawing.Point(560, 236)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(10, 13)
-        Me.Label3.TabIndex = 26
-        Me.Label3.Text = "-"
+        Me.lnamestar.AutoSize = True
+        Me.lnamestar.BackColor = System.Drawing.Color.Transparent
+        Me.lnamestar.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lnamestar.ForeColor = System.Drawing.Color.Red
+        Me.lnamestar.Location = New System.Drawing.Point(532, 229)
+        Me.lnamestar.Name = "lnamestar"
+        Me.lnamestar.Size = New System.Drawing.Size(23, 31)
+        Me.lnamestar.TabIndex = 26
+        Me.lnamestar.Text = "-"
         '
-        'Label4
+        'fnamestar
         '
-        Me.Label4.AutoSize = True
-        Me.Label4.BackColor = System.Drawing.Color.Transparent
-        Me.Label4.ForeColor = System.Drawing.Color.Red
-        Me.Label4.Location = New System.Drawing.Point(560, 272)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(10, 13)
-        Me.Label4.TabIndex = 26
-        Me.Label4.Text = "-"
+        Me.fnamestar.AutoSize = True
+        Me.fnamestar.BackColor = System.Drawing.Color.Transparent
+        Me.fnamestar.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.fnamestar.ForeColor = System.Drawing.Color.Red
+        Me.fnamestar.Location = New System.Drawing.Point(532, 265)
+        Me.fnamestar.Name = "fnamestar"
+        Me.fnamestar.Size = New System.Drawing.Size(23, 31)
+        Me.fnamestar.TabIndex = 26
+        Me.fnamestar.Text = "-"
         '
-        'Label5
+        'mnamestar
         '
-        Me.Label5.AutoSize = True
-        Me.Label5.BackColor = System.Drawing.Color.Transparent
-        Me.Label5.ForeColor = System.Drawing.Color.Red
-        Me.Label5.Location = New System.Drawing.Point(560, 308)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(10, 13)
-        Me.Label5.TabIndex = 26
-        Me.Label5.Text = "-"
+        Me.mnamestar.AutoSize = True
+        Me.mnamestar.BackColor = System.Drawing.Color.Transparent
+        Me.mnamestar.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.mnamestar.ForeColor = System.Drawing.Color.Red
+        Me.mnamestar.Location = New System.Drawing.Point(532, 301)
+        Me.mnamestar.Name = "mnamestar"
+        Me.mnamestar.Size = New System.Drawing.Size(23, 31)
+        Me.mnamestar.TabIndex = 26
+        Me.mnamestar.Text = "-"
         '
-        'Label7
+        'phonestar
         '
-        Me.Label7.AutoSize = True
-        Me.Label7.BackColor = System.Drawing.Color.Transparent
-        Me.Label7.ForeColor = System.Drawing.Color.Red
-        Me.Label7.Location = New System.Drawing.Point(560, 346)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(10, 13)
-        Me.Label7.TabIndex = 26
-        Me.Label7.Text = "-"
+        Me.phonestar.AutoSize = True
+        Me.phonestar.BackColor = System.Drawing.Color.Transparent
+        Me.phonestar.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.phonestar.ForeColor = System.Drawing.Color.Red
+        Me.phonestar.Location = New System.Drawing.Point(532, 339)
+        Me.phonestar.Name = "phonestar"
+        Me.phonestar.Size = New System.Drawing.Size(23, 31)
+        Me.phonestar.TabIndex = 26
+        Me.phonestar.Text = "-"
         '
-        'Label8
+        'deststar
         '
-        Me.Label8.AutoSize = True
-        Me.Label8.BackColor = System.Drawing.Color.Transparent
-        Me.Label8.ForeColor = System.Drawing.Color.Red
-        Me.Label8.Location = New System.Drawing.Point(560, 381)
-        Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(10, 13)
-        Me.Label8.TabIndex = 26
-        Me.Label8.Text = "-"
+        Me.deststar.AutoSize = True
+        Me.deststar.BackColor = System.Drawing.Color.Transparent
+        Me.deststar.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.deststar.ForeColor = System.Drawing.Color.Red
+        Me.deststar.Location = New System.Drawing.Point(532, 374)
+        Me.deststar.Name = "deststar"
+        Me.deststar.Size = New System.Drawing.Size(23, 31)
+        Me.deststar.TabIndex = 26
+        Me.deststar.Text = "-"
         '
-        'TextBox1
+        'Purposetxbx
         '
-        Me.TextBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox1.Location = New System.Drawing.Point(310, 417)
-        Me.TextBox1.Margin = New System.Windows.Forms.Padding(2)
-        Me.TextBox1.Multiline = True
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(245, 28)
-        Me.TextBox1.TabIndex = 18
+        Me.Purposetxbx.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Purposetxbx.Location = New System.Drawing.Point(310, 417)
+        Me.Purposetxbx.Margin = New System.Windows.Forms.Padding(2)
+        Me.Purposetxbx.Multiline = True
+        Me.Purposetxbx.Name = "Purposetxbx"
+        Me.Purposetxbx.Size = New System.Drawing.Size(245, 28)
+        Me.Purposetxbx.TabIndex = 18
         '
-        'Label9
+        'purposestar
         '
-        Label9.AutoSize = True
-        Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Label9.Location = New System.Drawing.Point(150, 420)
-        Label9.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Label9.Name = "Label9"
-        Label9.Size = New System.Drawing.Size(68, 20)
-        Label9.TabIndex = 17
-        Label9.Text = "Purpose"
+        Me.purposestar.AutoSize = True
+        Me.purposestar.BackColor = System.Drawing.Color.Transparent
+        Me.purposestar.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.purposestar.ForeColor = System.Drawing.Color.Red
+        Me.purposestar.Location = New System.Drawing.Point(532, 410)
+        Me.purposestar.Name = "purposestar"
+        Me.purposestar.Size = New System.Drawing.Size(23, 31)
+        Me.purposestar.TabIndex = 26
+        Me.purposestar.Text = "-"
         '
         'Add_Visitors
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.Controls.Add(Me.Label8)
-        Me.Controls.Add(Me.Label7)
-        Me.Controls.Add(Me.Label5)
-        Me.Controls.Add(Me.Label4)
-        Me.Controls.Add(Me.Label3)
-        Me.Controls.Add(Me.Label2)
+        Me.Controls.Add(Me.purposestar)
+        Me.Controls.Add(Me.deststar)
+        Me.Controls.Add(Me.phonestar)
+        Me.Controls.Add(Me.mnamestar)
+        Me.Controls.Add(Me.fnamestar)
+        Me.Controls.Add(Me.lnamestar)
+        Me.Controls.Add(Me.badgestar)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.ComboBox1)
         Me.Controls.Add(Me.AddNew)
         Me.Controls.Add(DestinationLabel)
-        Me.Controls.Add(Label9)
+        Me.Controls.Add(Purposelbl)
         Me.Controls.Add(Phone_NumberLabel)
-        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.Purposetxbx)
         Me.Controls.Add(Me.Phone_NumberTextBox)
         Me.Controls.Add(Middle_NameLabel)
         Me.Controls.Add(Me.Middle_NameTextBox)
@@ -412,11 +432,12 @@ Partial Class Add_Visitors
     Friend WithEvents ComboBox1 As ComboBox
     Friend WithEvents Label1 As Label
     Friend WithEvents Timer1 As Timer
-    Friend WithEvents Label2 As Label
-    Friend WithEvents Label3 As Label
-    Friend WithEvents Label4 As Label
-    Friend WithEvents Label5 As Label
-    Friend WithEvents Label7 As Label
-    Friend WithEvents Label8 As Label
-    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents badgestar As Label
+    Friend WithEvents lnamestar As Label
+    Friend WithEvents fnamestar As Label
+    Friend WithEvents mnamestar As Label
+    Friend WithEvents phonestar As Label
+    Friend WithEvents deststar As Label
+    Friend WithEvents Purposetxbx As TextBox
+    Friend WithEvents purposestar As Label
 End Class
