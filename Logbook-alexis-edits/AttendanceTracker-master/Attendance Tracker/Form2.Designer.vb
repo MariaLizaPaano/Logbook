@@ -25,7 +25,6 @@ Partial Class Form2
         Me.components = New System.ComponentModel.Container()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.View_History_Vehicles1 = New Attendance_Tracker.View_History_Vehicles()
         Me.Button6 = New System.Windows.Forms.Button()
         Me.Button5 = New System.Windows.Forms.Button()
         Me.Button4 = New System.Windows.Forms.Button()
@@ -61,7 +60,6 @@ Partial Class Form2
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(34, Byte), Integer), CType(CType(36, Byte), Integer), CType(CType(49, Byte), Integer))
-        Me.Panel1.Controls.Add(Me.View_History_Vehicles1)
         Me.Panel1.Controls.Add(Me.Button6)
         Me.Panel1.Controls.Add(Me.Button5)
         Me.Panel1.Controls.Add(Me.Button4)
@@ -74,24 +72,15 @@ Partial Class Form2
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Left
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(215, 585)
+        Me.Panel1.Size = New System.Drawing.Size(217, 585)
         Me.Panel1.TabIndex = 3
-        '
-        'View_History_Vehicles1
-        '
-        Me.View_History_Vehicles1.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.View_History_Vehicles1.Location = New System.Drawing.Point(212, 0)
-        Me.View_History_Vehicles1.Margin = New System.Windows.Forms.Padding(2)
-        Me.View_History_Vehicles1.Name = "View_History_Vehicles1"
-        Me.View_History_Vehicles1.Size = New System.Drawing.Size(808, 609)
-        Me.View_History_Vehicles1.TabIndex = 19
         '
         'Button6
         '
         Me.Button6.BackColor = System.Drawing.Color.FromArgb(CType(CType(47, Byte), Integer), CType(CType(47, Byte), Integer), CType(CType(79, Byte), Integer))
         Me.Button6.Font = New System.Drawing.Font("Segoe UI Semibold", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button6.ForeColor = System.Drawing.Color.White
-        Me.Button6.Location = New System.Drawing.Point(0, 408)
+        Me.Button6.Location = New System.Drawing.Point(0, 442)
         Me.Button6.Name = "Button6"
         Me.Button6.Size = New System.Drawing.Size(215, 50)
         Me.Button6.TabIndex = 18
@@ -103,7 +92,7 @@ Partial Class Form2
         Me.Button5.BackColor = System.Drawing.Color.FromArgb(CType(CType(47, Byte), Integer), CType(CType(47, Byte), Integer), CType(CType(79, Byte), Integer))
         Me.Button5.Font = New System.Drawing.Font("Segoe UI Semibold", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button5.ForeColor = System.Drawing.Color.White
-        Me.Button5.Location = New System.Drawing.Point(0, 358)
+        Me.Button5.Location = New System.Drawing.Point(0, 392)
         Me.Button5.Name = "Button5"
         Me.Button5.Size = New System.Drawing.Size(215, 50)
         Me.Button5.TabIndex = 17
@@ -115,7 +104,7 @@ Partial Class Form2
         Me.Button4.BackColor = System.Drawing.Color.FromArgb(CType(CType(47, Byte), Integer), CType(CType(47, Byte), Integer), CType(CType(79, Byte), Integer))
         Me.Button4.Font = New System.Drawing.Font("Segoe UI Semibold", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button4.ForeColor = System.Drawing.Color.White
-        Me.Button4.Location = New System.Drawing.Point(0, 309)
+        Me.Button4.Location = New System.Drawing.Point(0, 343)
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(215, 50)
         Me.Button4.TabIndex = 16
@@ -155,7 +144,7 @@ Partial Class Form2
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(215, 50)
         Me.Button3.TabIndex = 9
-        Me.Button3.Text = "History"
+        Me.Button3.Text = "Visitor History"
         Me.Button3.UseVisualStyleBackColor = False
         '
         'Button2
@@ -167,7 +156,7 @@ Partial Class Form2
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(215, 51)
         Me.Button2.TabIndex = 8
-        Me.Button2.Text = "View Checked in"
+        Me.Button2.Text = "View Checked in Visitors"
         Me.Button2.UseVisualStyleBackColor = False
         '
         'Button1
@@ -237,11 +226,11 @@ Partial Class Form2
         '
         'View_History_Vehicles2
         '
-        Me.View_History_Vehicles2.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.View_History_Vehicles2.BackColor = System.Drawing.SystemColors.ButtonFace
         Me.View_History_Vehicles2.Location = New System.Drawing.Point(212, 0)
         Me.View_History_Vehicles2.Margin = New System.Windows.Forms.Padding(2)
         Me.View_History_Vehicles2.Name = "View_History_Vehicles2"
-        Me.View_History_Vehicles2.Size = New System.Drawing.Size(808, 609)
+        Me.View_History_Vehicles2.Size = New System.Drawing.Size(767, 585)
         Me.View_History_Vehicles2.TabIndex = 23
         '
         'Form2
@@ -250,8 +239,8 @@ Partial Class Form2
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(980, 585)
-        Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Panel1)
+        Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Add_Visitors3)
         Me.Controls.Add(Me.View_Visitors1)
         Me.Controls.Add(Me.View_Students1)
@@ -287,7 +276,6 @@ Partial Class Form2
     Friend WithEvents Button5 As Button
     Friend WithEvents Button4 As Button
     Friend WithEvents Add_Vehicles1 As Add_Vehicles
-    Friend WithEvents View_History_Vehicles1 As View_History_Vehicles
     Friend WithEvents View_Checked_in_vehicles1 As View_Checked_in_vehicles
     Friend WithEvents View_History_Vehicles2 As View_History_Vehicles
 End Class

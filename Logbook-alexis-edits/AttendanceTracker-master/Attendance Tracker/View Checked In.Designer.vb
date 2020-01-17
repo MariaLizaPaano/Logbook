@@ -66,9 +66,9 @@ Partial Class View_Visitors
         Me.Label6.ForeColor = System.Drawing.Color.White
         Me.Label6.Location = New System.Drawing.Point(20, 100)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(186, 37)
+        Me.Label6.Size = New System.Drawing.Size(315, 37)
         Me.Label6.TabIndex = 0
-        Me.Label6.Text = "View Check in"
+        Me.Label6.Text = "View Checked In Visitors"
         '
         'TextBox1
         '
@@ -95,10 +95,10 @@ Partial Class View_Visitors
         Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.Button1.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button1.ForeColor = System.Drawing.Color.White
-        Me.Button1.Location = New System.Drawing.Point(429, 521)
+        Me.Button1.Location = New System.Drawing.Point(521, 521)
         Me.Button1.Margin = New System.Windows.Forms.Padding(4)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(324, 43)
+        Me.Button1.Size = New System.Drawing.Size(232, 43)
         Me.Button1.TabIndex = 12
         Me.Button1.Text = "Check out"
         Me.Button1.UseVisualStyleBackColor = False
@@ -214,7 +214,7 @@ Partial Class View_Visitors
         Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.Button2.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button2.ForeColor = System.Drawing.Color.White
-        Me.Button2.Location = New System.Drawing.Point(232, 162)
+        Me.Button2.Location = New System.Drawing.Point(246, 162)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(103, 23)
         Me.Button2.TabIndex = 17

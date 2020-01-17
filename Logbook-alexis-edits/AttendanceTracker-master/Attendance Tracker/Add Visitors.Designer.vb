@@ -295,7 +295,7 @@ Partial Class Add_Visitors
         Me.badgestar.AutoSize = True
         Me.badgestar.BackColor = System.Drawing.Color.Transparent
         Me.badgestar.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.badgestar.ForeColor = System.Drawing.Color.Red
+        Me.badgestar.ForeColor = System.Drawing.Color.Magenta
         Me.badgestar.Location = New System.Drawing.Point(561, 188)
         Me.badgestar.Name = "badgestar"
         Me.badgestar.Size = New System.Drawing.Size(23, 31)
@@ -307,7 +307,7 @@ Partial Class Add_Visitors
         Me.lnamestar.AutoSize = True
         Me.lnamestar.BackColor = System.Drawing.Color.Transparent
         Me.lnamestar.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lnamestar.ForeColor = System.Drawing.Color.Red
+        Me.lnamestar.ForeColor = System.Drawing.Color.Magenta
         Me.lnamestar.Location = New System.Drawing.Point(561, 229)
         Me.lnamestar.Name = "lnamestar"
         Me.lnamestar.Size = New System.Drawing.Size(23, 31)
@@ -319,7 +319,7 @@ Partial Class Add_Visitors
         Me.fnamestar.AutoSize = True
         Me.fnamestar.BackColor = System.Drawing.Color.Transparent
         Me.fnamestar.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.fnamestar.ForeColor = System.Drawing.Color.Red
+        Me.fnamestar.ForeColor = System.Drawing.Color.Magenta
         Me.fnamestar.Location = New System.Drawing.Point(561, 265)
         Me.fnamestar.Name = "fnamestar"
         Me.fnamestar.Size = New System.Drawing.Size(23, 31)
@@ -331,7 +331,7 @@ Partial Class Add_Visitors
         Me.mnamestar.AutoSize = True
         Me.mnamestar.BackColor = System.Drawing.Color.Transparent
         Me.mnamestar.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.mnamestar.ForeColor = System.Drawing.Color.Red
+        Me.mnamestar.ForeColor = System.Drawing.Color.Magenta
         Me.mnamestar.Location = New System.Drawing.Point(561, 301)
         Me.mnamestar.Name = "mnamestar"
         Me.mnamestar.Size = New System.Drawing.Size(23, 31)
@@ -343,7 +343,7 @@ Partial Class Add_Visitors
         Me.phonestar.AutoSize = True
         Me.phonestar.BackColor = System.Drawing.Color.Transparent
         Me.phonestar.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.phonestar.ForeColor = System.Drawing.Color.Red
+        Me.phonestar.ForeColor = System.Drawing.Color.Magenta
         Me.phonestar.Location = New System.Drawing.Point(561, 339)
         Me.phonestar.Name = "phonestar"
         Me.phonestar.Size = New System.Drawing.Size(23, 31)
@@ -355,7 +355,7 @@ Partial Class Add_Visitors
         Me.deststar.AutoSize = True
         Me.deststar.BackColor = System.Drawing.Color.Transparent
         Me.deststar.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.deststar.ForeColor = System.Drawing.Color.Red
+        Me.deststar.ForeColor = System.Drawing.Color.Magenta
         Me.deststar.Location = New System.Drawing.Point(561, 374)
         Me.deststar.Name = "deststar"
         Me.deststar.Size = New System.Drawing.Size(23, 31)
@@ -377,7 +377,7 @@ Partial Class Add_Visitors
         Me.purposestar.AutoSize = True
         Me.purposestar.BackColor = System.Drawing.Color.Transparent
         Me.purposestar.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.purposestar.ForeColor = System.Drawing.Color.Red
+        Me.purposestar.ForeColor = System.Drawing.Color.Magenta
         Me.purposestar.Location = New System.Drawing.Point(561, 410)
         Me.purposestar.Name = "purposestar"
         Me.purposestar.Size = New System.Drawing.Size(23, 31)

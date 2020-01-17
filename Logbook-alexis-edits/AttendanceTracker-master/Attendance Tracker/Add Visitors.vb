@@ -62,9 +62,10 @@
             Label1.Text = "Successfully checked in visitor"
             'MessageBox.Show("Successfully checked in visitor")
         Else
+            'error
             ctr = 0
             Timer1.Start()
-            Label1.ForeColor = Color.Red
+            Label1.ForeColor = Color.Magenta
             Label1.Visible = True
             Label1.Text = "There was an error"
             'MessageBox.Show("Please fill out all fields.")

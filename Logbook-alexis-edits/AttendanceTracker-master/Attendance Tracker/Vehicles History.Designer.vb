@@ -50,7 +50,7 @@ Partial Class View_History_Vehicles
         Me.Panel2.Controls.Add(Me.Label6)
         Me.Panel2.Location = New System.Drawing.Point(0, 0)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(808, 156)
+        Me.Panel2.Size = New System.Drawing.Size(828, 156)
         Me.Panel2.TabIndex = 14
         '
         'Label6
@@ -70,7 +70,7 @@ Partial Class View_History_Vehicles
         Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.Button1.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button1.ForeColor = System.Drawing.Color.White
-        Me.Button1.Location = New System.Drawing.Point(243, 162)
+        Me.Button1.Location = New System.Drawing.Point(239, 167)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(103, 23)
         Me.Button1.TabIndex = 18
@@ -80,7 +80,7 @@ Partial Class View_History_Vehicles
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.Panel1.Location = New System.Drawing.Point(3, 184)
+        Me.Panel1.Location = New System.Drawing.Point(13, 189)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(220, 1)
         Me.Panel1.TabIndex = 20
@@ -89,12 +89,11 @@ Partial Class View_History_Vehicles
         '
         Me.TextBox1.BackColor = System.Drawing.SystemColors.Window
         Me.TextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.TextBox1.Location = New System.Drawing.Point(3, 162)
+        Me.TextBox1.Location = New System.Drawing.Point(13, 167)
         Me.TextBox1.Multiline = True
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(217, 23)
         Me.TextBox1.TabIndex = 19
-        Me.TextBox1.Text = "Search here"
         '
         'VehiclesDataSet
         '
@@ -161,6 +160,7 @@ Partial Class View_History_Vehicles
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.SystemColors.ButtonFace
         Me.Controls.Add(Me.MaaweDataGridView)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Panel1)
